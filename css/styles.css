@@ -1,0 +1,13 @@
+.meat {
+  width: 700px;
+}
+
+
+.chicken-meat {
+  float: left;
+}
+
+.cow-meat {
+  float: right;
+
+}
