@@ -11,3 +11,20 @@
   float: right;
 
 }
+
+.columns{
+  width: auto;
+  height: auto;
+  float: left;
+}
+
+
+.img-thumnail {
+width: auto;
+height: auto;
+}
+
+.dairyproducts {
+  width: 40px;
+  height: 2px;
+}
