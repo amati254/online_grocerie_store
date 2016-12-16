@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Grocerie Store</title>
+  </head>
+  <body>
+    <div id="background-carousel">
+     <div id="myCarousel" class="carousel slide main-gallery" data-ride="carousel">
+       <div class="carousel-inner">
+         <div class="item active"><img src="img/background_carousel/1.jpg" alt=""></div>
+         <div class="item"><img class="img-responsive" src="img/background_carousel/2.jpg" alt=""></div>
+         <div class="item" ><img class="img-responsive" src="img/background_carousel/3.jpg" alt=""></div>
+         <div class="item" ><img class="img-responsive" src="img/background_carousel/4.jpg" alt=""></div>
+       </div>
+     </div>
+   </div>
+   <div class="content Wrapper">
+     <div class="pop-upmenu">
+       <div  onclick="openInNewTab('fruits.html');" class="fruit fade-in one">
+         <img src="ico/1.ico" alt="fruit_icon"></img>
+         <p>Fruits</p>
+       </div>
+       <div onclick="openInNewTab('vegetables.html');" class="vegetables fade-in two">
+         <img src="ico/2.png" alt="fruit_icon"></img>
+         <p>Vegetables</p>
+       </div>
+       <div onclick="openInNewTab('dairy.html');" class="dairy fade-in three">
+         <img src="ico/3.ico" alt="fruit_icon"></img>
+         <p>Dairy</p>
+       </div>
+       <div onclick="openInNewTab('meats.html');" class="meats fade-in one">
+         <img src="ico/4.png" alt="fruit_icon"></img>
+         <p>Meats</p>
+       </div>
+       <div onclick="openInNewTab('pastry.html');" class="pastry fade-in two">
+         <img src="ico/5.png" alt="fruit_icon"></img>
+         <p>Pastry</p>
+       </div>
+       <div onclick="openInNewTab('gifts.html');" class="spices fade-in three">
+         <img src="ico/7.png" alt="fruit_icon"></img>
+         <p>Spices</p>
+       </div>
+     </div>
+   </div>
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   <script src="js/jquery-3.1.1.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap.js"></script>
+   <script src="js/scripts.js"></script>
+  </body>
+</html>

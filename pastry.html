@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/skeleton.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/contentstyles.css" rel="stylesheet" type="text/css">
+    <title></title>
+  </head>
+  <body>
+    <input type="checkbox" id="sidebartoggler" name="" value="">
+    <input type="checkbox" id="carttoggler" name="" value="">
+    <div class="page-wrap page-wrapa">
+      <label for="sidebartoggler" class="toggleside">☰</label>
+      <label for="carttoggler" class="togglecart"><img src="ico/shopping-cart.png" alt=""></label>
+    <div class="page-content">
+    <div class="topstuff">
+    <nav>
+      <ul>
+        <li>Tropical Fruits
+          <ul class="drop-menu">
+            <li>Banana</li>
+            <li>Pinaapple</li>
+            <li>Apple</li>
+            <li></li>
+          </ul>
+        </li>
+        <li>Citrus Fruits
+          <ul class="drop-menu">
+            <li>oranges</li>
+            <li>citrus</li>
+          </ul>
+        </li>
+        <li>Berries
+          <ul class="drop-menu">
+            <li>Strawberries</li>
+            <li>RaspBerrie</li>
+            <li>Blueberry</li>
+          </ul>
+        </li>
+        <li>Stone Fruits
+          <ul class="drop-menu">
+            <li>plums</li>
+            <li>avocado</li>
+            <li>dates</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <h3> Scroll On ↓</h3>
+  </div>
+    <div class="container">
+      <div class="row img-row">
+          <figure class="columns four item"><img src="img/fruits/apple1.jpg">
+            <figcaption>
+              <h3 class="itemname">Apples</h3>
+              <h4 class="itemprice">KSh0.67 per Kg</h4>
+              <div class="incdec">
+                <input class="numinput" id="iteminput" type="text" />
+                <img src="img/arrows/up.ico" class="up" />
+                <img src="img/arrows/down.ico" class="down" />
+                <button class="buybutton" onclick="additemcart('apples',0.67);">Buy</button>
+              </div>
+            </figcaption>
+          </figure>
+        <figure class="columns four item"><img src="img/fruits/banana.jpg">
+          <figcaption>
+            <h3 class="itemname">Bananas</h3>
+            <h4 class="itemprice">KSh 1.2 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput1" />
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart1('bananas',1.2);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img src="img/fruits/apricot.jpg">
+          <figcaption>
+            <h3 class="itemname">Apricots</h3>
+            <h4 class="itemprice">KSh 2 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput2"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart2('apricots',2);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="row img-row">
+        <figure class="columns four item"><img src="img/fruits/orange.jpg">
+          <figcaption>
+            <h3 class="itemname">Oranges</h3>
+            <h4 class="itemprice">KSh0.97 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput3"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart3('oranges',0.97);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img src="img/fruits/pineapple.jpg">
+          <figcaption>
+            <h3 class="itemname">PineApples</h3>
+            <h4 class="itemprice">KSh 5.1 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput4"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart4('pineapples',5.1);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img src="img/fruits/redgrape.jpg">
+          <figcaption>
+            <h3 class="itemname"> Red Grapes</h3>
+            <h4 class="itemprice">KSh 0.88 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput5"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart5('Red Grapes',0.88);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="row img-row">
+        <figure class="columns four item"><img src="img/fruits/strawberry.jpg">
+          <figcaption>
+            <h3 class="itemname">StrawBerries</h3>
+            <h4 class="itemprice">KSh 1.8 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput6"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart6('Strawberries',1.8);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img src="img/fruits/mango.jpg">
+          <figcaption>
+            <h3 class="itemname">Mangoes</h3>
+            <h4 class="itemprice">KSh 0.45 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput7"/>
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart7('mangoes',0.45);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="columns four item"><img src="img/fruits/avocado.jpg">
+          <figcaption>
+            <h3 class="itemname">Avocado</h3>
+            <h4 class="itemprice">KSh 3.2 per Kg</h4>
+            <div class="incdec">
+              <input class="numinput" type="text" id="iteminput8" />
+              <img src="img/arrows/up.ico" class="up" />
+              <img src="img/arrows/down.ico" class="down" />
+              <button class="buybutton" onclick="additemcart8('avocado',3.2);">Buy</button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+    <div class="sidebar">
+      <ul>
+        <li>Home</li>
+        <li>Vegetables</li>
+        <li>Dairy</li>
+        <li>Meats</li>
+        <li>Pastry</li>
+      </ul>
+    </div>
+    <div class="cart">
+      <ul class="cartitems">
+      </ul>
+      <button class="btn-default" type="submit" name="button" onclick="openInNewTab('order.html');">submit</button>
+    </div>
+  </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/itemscripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.order{
+  width: 400px;
+  margin-top: 130px;
+}
+#name, #secondname, #email{
+  height: 50px;
+}
+#lblname{
+  padding-left: 10px;
+}
+#textarea{
+  height: 100px;
+}
