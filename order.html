@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/formstyles.css" rel="stylesheet" type="text/css">
+  <title="order">
+</head>
+<body>
+  <div class="order">
+    <form id="sub" enctype="text/plain" action="https://formspree.io/amatijayson@gmail.com" method="POST">
+      <div class="form-group">
+        <label class="lblname" for="#name">First Name</label>
+        <input type="text" name="first_name" placeholder="Enter your first name" id="name" class="form-control"></input>
+      </div>
+      <div class="form-group">
+        <label class="lblname" for="#secondname">Second Name</label>
+        <input type="text" name="second_name" placeholder="Enter your second name" id="secondname" class="form-control"></input>
+      </div>
+      <div class="form-group">
+        <label class="lblname" for="#email">Email</label>
+        <input type="email" name="email" placeholder="Enter your Email" id="email" class="form-control"></input>
+      </div>
+      <hr></hr>
+      <div class="form-group">
+        <label class="lblname" for="#textarea">Physical Address</label>
+        <textarea type="text" name="address" placeholder="e.g house no 1 state house road" id="textarea" class="form-control"></textarea>
+      </div>
+      <button type="submit" class="btn btn-default" value="send">Submit</button>
+    </form>
+  </div>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
